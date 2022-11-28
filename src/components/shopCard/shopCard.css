@@ -1,0 +1,46 @@
+.card__container {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(210, 210, 210);
+    -webkit-box-shadow: 10px 10px 5px 1px rgba(110, 109, 110, 1);
+    -moz-box-shadow: 10px 10px 5px 1px rgba(110, 109, 110, 1);
+    box-shadow: 10px 10px 5px 1px rgba(110, 109, 110, 1);
+}
+
+.card__container:hover {
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
+.card__detailContainer {
+    margin-left: 1em;
+}
+
+.card__img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.card__shopName {
+    /* width: 100vw; */
+    margin-bottom: 0.2em;
+}
+
+.card__remove {
+    display: flex;
+    margin: 1em;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .card__container:hover {
+        transform: scale(1);
+        transition: all 1s;
+    }
+}
